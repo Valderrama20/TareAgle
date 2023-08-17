@@ -1,7 +1,13 @@
 
-let queryString = window.location.search;
+// Obtener la cadena de consulta de la URL
+var queryString = window.location.search;
+        
+// Crear un objeto URLSearchParams a partir de la cadena de consulta
+var parametros = new URLSearchParams(queryString);
 
-console.log(queryString)
+// Obtener los valores de los parámetros de la consulta
+var usuario = parametros.get('carbonFootprintLevel');
+var id = parametros.get('carbonFootprin1');
 
 document.addEventListener("DOMContentLoaded", () => {
     const btnDescargar = document.getElementById("btnDescargar");
