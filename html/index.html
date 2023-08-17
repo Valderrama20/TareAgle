@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="MAVIA - Register, Reservation, Questionare, Reviews form wizard">
+	<meta name="author" content="Ansonika">
+	<title>MAVIA | Register, Reservation, Questionare, Reviews form wizard</title>
+
+	<!-- Favicons-->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="114x114"
+		href="img/apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon" type="image/x-icon" sizes="144x144"
+		href="img/apple-touch-icon-144x144-precomposed.png">
+
+	<!-- GOOGLE WEB FONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+		rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/animate.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/menu.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/responsive.css" rel="stylesheet">
+	<link href="css/icon_fonts/css/all_icons_min.css" rel="stylesheet">
+	<link href="css/skins/square/grey.css" rel="stylesheet">
+
+	<!-- COLOR CSS -->
+	<link href="css/color_3.css" rel="stylesheet">
+
+	<!-- BASE CSS -->
+	<link href="css/date_time_picker.css" rel="stylesheet">
+
+	<!-- YOUR CUSTOM CSS -->
+	<link href="css/custom.css" rel="stylesheet">
+
+	<script src="js/modernizr.js"></script>
+	<!-- Modernizr -->
+
+</head>
+<div id="preloader">
+	<div data-loader="circle-side"></div>
+</div><!-- /Preload -->
+
+<div id="loader_form">
+	<div data-loader="circle-side-2"></div>
+</div><!-- /loader_form -->
+
+
+<body>
+
+
+
+	<main>
+		<div id="form_container">
+			<div class="row">
+				<div class="col-lg-5">
+					<div id="left_form">
+						<figure><img class="logo" src="img/LogoTareagle.png" alt=""></figure>
+						<h2 class="h2">¡Mide tu huella de carbono!</h2>
+						<p class="text1">¿Sabes cuánta contaminación generas actualmente? Si la respuesta es no, puedes usar esta computadora para saber aproximadamente cuanta huella de carbono estás generando y cómo podrías contribuir a reducirla</p>
+						<a href="#0" id="more_info" data-bs-toggle="modal" data-bs-target="#more-info"><i
+								class="pe-7s-info"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-7">
+
+					<div id="wizard_container">
+						<div id="top-wizard">
+							<div id="progressbar"></div>
+						</div>
+						<!-- /top-wizard -->
+						<form name="example-1" id="wrapped" method="POST">
+							<input id="website" name="website" type="text" value="">
+							<!-- Leave for security protection, read docs for details -->
+							<div id="middle-wizard">
+
+								<div class="step">
+									<h3 class="main_question"><strong>1/9</strong>¿Cuántos focos o bombillas tienes en
+										tu hogar?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="numOfLightBulbs"
+														class="icheck required">Menos de 10</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="numOfLightBulbs" class="icheck required">De 10 a 20</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="3" name="numOfLightBulbs"
+														class="icheck required">Mas de 20</label>
+											</div>
+								
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question"><strong>2/9</strong>¿De qué tipo son la mayoría de tus
+										focos o bombillas?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="lightBulbType"
+														class="icheck required">LED</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="lightBulbType" class="icheck required">NO LED</label>
+											</div>
+
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+								<div class="step">
+									<h3 class="main_question"><strong>3/9</strong>¿Cuántos televisores hay en tu hogar?
+									</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="numOfTelevisions"
+														class="icheck required">1 Televisor</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="numOfTelevisions" class="icheck required">2 Televisores</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="3" name="numOfTelevisions"
+														class="icheck required">Mas de 3 Televisores</label>
+											</div>
+
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question"><strong>4/9</strong>¿Cuántos refrigeradores o neveras hay
+										en tu hogar?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="numOfRefrigerators"
+														class="icheck required">1 Refrigerador</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="numOfRefrigerators" class="icheck required">2 Refrigeradores</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="3" name="numOfRefrigerators"
+														class="icheck required">Mas de 3 Refrigeradores</label>
+											</div>
+
+										</div>
+									</div>
+									<!-- /row -->
+									
+								</div>
+
+								<!-- /step -->
+
+
+								<div class="step">
+									<h3 class="main_question"><strong>5/9</strong>¿Utilizas algún sistema de calefaccion en tu hogar y cuantos</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="0" name="heatingSystemsCount"
+														class="icheck required">Ningun Sistema</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="heatingSystemsCount"
+														class="icheck required">1 Sistema</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="heatingSystemsCount" class="icheck required">Mas de 1 Sistema</label>
+											</div>
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question"><strong>6/9</strong>¿Qué medio de transporte utilizas habitualmente para desplazarte a tu trabajo o estudios?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="transportationType"
+														class="icheck required">A Pie o Bicicleta</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2 "
+														name="transportationType" class="icheck required">Transporte público (autobús, metro, tren)</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="3" name="transportationType"
+														class="icheck required">Vehiculo Propio (Electrico/Hibrido)</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="4"
+														name="transportationType" class="icheck required">Vehiculo Propio (Gasolina/Diesel)</label>
+											</div>
+
+										</div>
+									</div>
+									<!-- /row -->
+
+								<!-- /step -->
+
+								</div>
+
+								<div class="step">
+									<h3 class="main_question"><strong>7/9</strong>¿Cuántos kilómetros recorres aproximadamente en un día normal?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="dailyKMDistance"
+														class="icheck required">Menos de 5 km</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="dailyKMDistance" class="icheck required">De 5 a 20 km</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="3" name="dailyKMDistance"
+														class="icheck required">De 20 a 50 km</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="4"
+														name="dailyKMDistance" class="icheck required">Más de 50 km</label>
+											</div>
+
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+								<div class="step">
+									<h3 class="main_question"><strong>8/9</strong>¿Con qué frecuencia viajas en avión al año?</h3>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group radio_input">
+												<label><input type="radio" value="1" name="flightFrequencyYearly"
+														class="icheck required">No viajo en avión</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="2"
+														name="flightFrequencyYearly" class="icheck required">1 a 2 veces por Ano</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="3" name="flightFrequencyYearly"
+														class="icheck required">3 a 5 veces por Ano</label>
+											</div>
+											<div class="form-group radio_input">
+												<label><input type="radio" value="4"
+														name="flightFrequencyYearly" class="icheck required">Más de 5 veces por Ano</label>
+											</div>
+
+										</div>
+									</div>
+									<!-- /row -->
+								</div>
+								<!-- /step -->
+
+
+								<div class="submit step">
+									<h3 class="main_question"><strong>9/9 </strong>¿Cuántos pequeños electrodomésticos utilizas habitualmente (ejemplo: licuadora, tostadora, cafetera, microondas, etc.)?</h3>
+									<div class="col-md-12">
+										<div class="form-group radio_input">
+											<label><input type="radio" value="1" name="smallAppliancesCount"
+													class="icheck required">Menos de 3</label>
+										</div>
+										<div class="form-group radio_input">
+											<label><input type="radio" value="2" name="smallAppliancesCount"
+													class="icheck required">De 3 a 5</label>
+										</div>
+										<div class="form-group radio_input">
+											<label><input type="radio" value="3" name="smallAppliancesCount"
+													class="icheck required">Mas de 5</label>
+										</div>
+
+									</div>
+
+									<!-- /row -->
+									<br>
+									<div class="row">
+										<div class="col-md-12">
+											<!-- <div class="form-group terms">
+												<input name="terms" type="checkbox" class="icheck required" value="yes">
+												<label>Please accept <a href="#" data-bs-toggle="modal" data-bs-target="#terms-txt">terms and conditions</a> ?</label>
+											</div>
+										</div> -->
+										</div>
+									</div>
+									<!-- /step-->
+								</div>
+								<!-- /middle-wizard -->
+								<div id="bottom-wizard">
+									<button type="button" name="backward" class="backward">Backward </button>
+									<button type="button" name="forward" class="forward">Forward</button>
+									<button type="submit" name="process" id="enviarBoton" class="submit">Submit</button>
+								</div>
+								<!-- /bottom-wizard -->
+						</form>
+					</div>
+					<!-- /Wizard container -->
+				</div>
+			</div><!-- /Row -->
+		</div><!-- /Form_container -->
+	</main>
+
+
+	<!-- end footer-->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div>
+	<!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div>
+
+
+
+	<!-- Modal terms -->
+	<div class="modal fade" id="terms-txt" tabindex="-1" role="dialog" aria-labelledby="termsLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="termsLabel">Terms and conditions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>,
+						mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus,
+						pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
+						dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+						sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum
+						accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+						sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
+						dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+						sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<!-- /.modal -->
+
+	<!-- Modal info -->
+	<div class="modal fade" id="more-info" tabindex="-1" role="dialog" aria-labelledby="more-infoLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="more-infoLabel">Frequently asked questions</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in <strong>nec quod novum accumsan</strong>,
+						mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus,
+						pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
+						dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+						sensibus. Lorem ipsum dolor sit amet, <strong>in porro albucius qui</strong>, in nec quod novum
+						accumsan, mei ludus tamquam dolores id. No sit debitis meliore postulant, per ex prompta alterum
+						sanctus, pro ne quod dicunt sensibus.</p>
+					<p>Lorem ipsum dolor sit amet, in porro albucius qui, in nec quod novum accumsan, mei ludus tamquam
+						dolores id. No sit debitis meliore postulant, per ex prompta alterum sanctus, pro ne quod dicunt
+						sensibus.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn_1" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+			<!-- /.modal-content -->
+		</div>
+		<!-- /.modal-dialog -->
+	</div>
+	<div id="miDiv">
+
+	</div>
+	<!-- /.modal -->
+
+	<!-- SCRIPTS -->
+
+	<!--Lamados Api -->
+
+	<script type="module" src="js/__enviarObjetoAPI.js"></script> 
+	<!-- Jquery-->
+	<script src="js/jquery-3.6.4.min.js"></script>
+	<!-- Common script -->
+	<script src="js/common_scripts.js"></script>
+	<!-- Wizard script -->
+	<script src="js/questionare_wizard_func.js"></script>
+	<!-- Menu script -->
+	<script src="js/velocity.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Theme script -->
+	<script src="js/functions.js"></script>
+
+
+</body>
+
+</html>

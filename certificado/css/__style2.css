@@ -1,0 +1,56 @@
+
+body {
+    margin: 0px;
+}
+
+.containerImg {
+    height: 100vh;
+    display: flex;
+   
+    background: rgb(55,3,119);
+   background: linear-gradient(142deg, rgba(55,3,119,1) 49%, rgba(140,101,206,1) 87%);
+
+}
+
+.containerImg div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://tareagle.com/wp-content/uploads/2021/09/BG-dark1.png');
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+        
+}
+
+.containerImg img {
+    height: 80vh;
+    border-radius: 10px;
+    -webkit-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
+box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
+    
+}
+
+.containerImg button {
+    background-color: #00000029;
+    border: 1px solid #DB26F9;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: "Poppins", Sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 4px 8px;
+    margin: 20px 0;
+    transition: 0.5s;
+} 
+
+
+.containerImg button:hover {
+    cursor: pointer;
+    padding: 6px 18px;
+}
