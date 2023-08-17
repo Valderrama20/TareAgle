@@ -9,6 +9,8 @@ var parametros = new URLSearchParams(queryString);
 var usuario = parametros.get('carbonFootprintLevel');
 var id = parametros.get('carbonFootprin1');
 
+console.log(usuario, id)
+
 document.addEventListener("DOMContentLoaded", () => {
     const btnDescargar = document.getElementById("btnDescargar");
     const imagenDescargable = document.getElementById("imagenDescargable");
