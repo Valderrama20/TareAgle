@@ -1,3 +1,6 @@
+   const btnDescargar = document.getElementById("btnDescargar");
+   const imagenDescargable = document.getElementById("imagenDescargable");
+
 
 // Obtener la cadena de consulta de la URL
 var queryString = window.location.search;
@@ -6,17 +9,26 @@ var queryString = window.location.search;
 var parametros = new URLSearchParams(queryString);
 
 // Obtener los valores de los parámetros de la consulta
-var usuario = parametros.get('carbonFootprintLevel');
-var id = parametros.get('carbonFootprin1');
+var carbonFootprintLevel = parametros.get('carbonFootprintLevel');
+var carbonFootprin1 = parametros.get('carbonFootprin1');
 
-console.log(usuario, id)
+const changeImg = (valor) => {
+    const carbonEmission = {
+        Bajo: "./img/img1.jpeg",
+        Moderado: "./img/img2.jpeg",
+        Medio: "./img/img4.jpeg",
+        Alto: "./img/img4.jpeg"
+     }
+       
+    imagenDescargable.src = carbonEmission[valor]
+}
+
+
+changeImg(carbonFootprintLevel)
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    const btnDescargar = document.getElementById("btnDescargar");
-    const imagenDescargable = document.getElementById("imagenDescargable");
-
-   
-
+    
     btnDescargar.addEventListener("click", () => {
         // Crear un enlace temporal
         const enlaceTemporal = document.createElement("a");
@@ -33,14 +45,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
  
 
-const changeImg = (valor) => {
-    const carbonEmission = {
-        "1": "./img/img1.jpeg",
-        "2": "./img/img2.jpeg",
-        "3": "./img/img4.jpeg",
-        "4": "./img/img4.jpeg"
-     }
-       
-    imagenDescargable.src = carbonEmission[valor]
-}
+
 
