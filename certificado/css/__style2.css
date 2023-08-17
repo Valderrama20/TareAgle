@@ -27,7 +27,7 @@ body {
 }
 
 .containerImg img {
-    height: 80vh;
+    height: 70vh;
     border-radius: 10px;
     -webkit-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
 -moz-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
@@ -45,10 +45,15 @@ box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
     font-weight: 500;
     line-height: 24px;
     padding: 4px 8px;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     transition: 0.5s;
 } 
 
+.containerImg p {
+    color: white;
+    font-size: 18px;font-weight: bold;
+}
+ 
 
 .containerImg button:hover {
     cursor: pointer;

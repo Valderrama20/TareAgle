@@ -12,7 +12,7 @@ var parametros = new URLSearchParams(queryString);
 var carbonFootprintLevel = parametros.get('carbonFootprintLevel');
 var carbonFootprin1 = parametros.get('carbonFootprin1');
 
-const changeImg = (valor) => {
+const changeImg = (valor = "Bajo") => {
     const carbonEmission = {
         Bajo: "./img/img1.jpeg",
         Moderado: "./img/img2.jpeg",
