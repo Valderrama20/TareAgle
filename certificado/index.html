@@ -1,23 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/__style2.css">
-    
-    <title>Canvas con HTML y CSS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/__style2.css">
+  <title>Canvas con HTML y CSS</title>
+  <style>
+    .twitter-intent-button {
+      display: inline-block;
+      background-color: #1DA1F2;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.2s;
+    }
+
+    .twitter-intent-button:hover {
+      background-color: #1A8DCD;
+    }
+
+    .twitter-intent-button:active {
+      background-color: #1683BB;
+      box-shadow: none;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Función para obtener parámetros de la URL
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
+      // Capturando valores de la URL
+      let carbonFootprintValue = getParameterByName('carbonFootprin1');
+      let carbonFootprintLevel = getParameterByName('carbonFootprintLevel');
+
+      // Insertando valores en el HTML
+      if (carbonFootprintValue) {
+        document.getElementById('carbonValue').textContent = carbonFootprintValue;
+      }
+
+      if (carbonFootprintLevel) {
+        document.getElementById('carbonLevel').textContent = carbonFootprintLevel;
+      }
+    });
+
+  </script>
 </head>
+
 <body>
   <div class="containerImg">
     <div>
       <img id="imagenDescargable" src="" alt="Imagen descargable">
-    <button id="btnDescargar">Descargar Imagen</button>
-    <p>¡Soy parte del cambio! Comparte esta imagen en X (ex Twitter) y etiqueta a @tareagleok con el haztag #CuidoElPlaneta para participar por en el sorteo</p>
+      <br />
+      <a class="twitter-intent-button"
+        href="https://twitter.com/intent/tweet?text=Acabo%20de%20calcular%20mi%20huella%20de%20carbono%20con%20%40tareagleok%20%C2%BFTe%20animas%20a%20descubrir%20la%20tuya%3F%20%F0%9F%8C%B1"
+        target="_blank" rel="noopener noreferrer">Compartir en Twitter</a>
+      <button id="btnDescargar">Descargar Certificado</button>
+      <p>Su nivel de huella de carbono es: <span id="carbonLevel"></span></p>
+      <p>Su huella de carbono es: <span id="carbonValue"></span></p>
     </div>
-     
-   
-  </div>
- 
 </body>
 <script type="module" src="./js/__crearImg.js"></script>
 
