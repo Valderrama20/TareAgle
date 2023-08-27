@@ -1,4 +1,3 @@
-
 body {
     margin: 0px;
 }
@@ -6,10 +5,8 @@ body {
 .containerImg {
     height: 100vh;
     display: flex;
-   
-    background: rgb(55,3,119);
-   background: linear-gradient(142deg, rgba(55,3,119,1) 49%, rgba(140,101,206,1) 87%);
 
+    background: #81b342;
 }
 
 .containerImg div {
@@ -23,16 +20,16 @@ body {
     background-position: center;
     background-size: cover;
     opacity: 1;
-        
+
 }
 
 .containerImg img {
     height: 70vh;
     border-radius: 10px;
-    -webkit-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
--moz-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
-box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
-    
+    -webkit-box-shadow: -4px 7px 20px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px 7px 20px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: -4px 7px 20px -8px rgba(0, 0, 0, 0.75);
+
 }
 
 .containerImg button {
@@ -47,7 +44,7 @@ box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
     padding: 4px 8px;
     margin: 20px 0 0 0;
     transition: 0.5s;
-} 
+}
 
 .containerImg p {
     color: white;
@@ -57,9 +54,64 @@ box-shadow: -4px 7px 20px -8px rgba(0,0,0,0.75);
     text-align: center;
     width: 300px;
 }
- 
+
 
 .containerImg button:hover {
     cursor: pointer;
     padding: 6px 18px;
+}
+
+.twitter-intent-button {
+    display: inline-block;
+    background-color: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+.twitter-intent-button:hover {
+    background-color: #1A8DCD;
+}
+
+.twitter-intent-button:active {
+    background-color: #1683BB;
+    box-shadow: none;
+}
+
+/* tabla */
+
+/* Table Styles */
+table {
+    width: 80%;
+    /* Table width relative to its container */
+    margin: 20px auto;
+    /* Top and bottom margin, auto left and right margin for centering */
+    border-collapse: collapse;
+    color: white;
+    /* Text color */
+}
+
+/* Header Styles */
+th {
+    padding: 15px;
+    text-align: center;
+    /* Center align text */
+    border-bottom: 2px solid white;
+    /* Border color */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Cell Styles */
+td {
+    padding: 15px;
+    text-align: center;
+    /* Center align text */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    /* Semi-transparent border */
+    font-size: 14px;
 }

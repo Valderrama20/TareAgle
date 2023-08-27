@@ -6,28 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/__style2.css">
   <title>Canvas con HTML y CSS</title>
-  <style>
-    .twitter-intent-button {
-      display: inline-block;
-      background-color: #1DA1F2;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-      transition: background-color 0.2s;
-    }
-
-    .twitter-intent-button:hover {
-      background-color: #1A8DCD;
-    }
-
-    .twitter-intent-button:active {
-      background-color: #1683BB;
-      box-shadow: none;
-    }
-  </style>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       // Función para obtener parámetros de la URL
@@ -47,7 +25,7 @@
 
       // Insertando valores en el HTML
       if (carbonFootprintValue) {
-        document.getElementById('carbonValue').textContent = " ("+carbonFootprintValue+")";
+        document.getElementById('carbonValue').textContent = " (" + carbonFootprintValue + ")";
       }
 
       if (carbonFootprintLevel) {
@@ -61,13 +39,56 @@
 <body>
   <div class="containerImg">
     <div>
-      <img id="imagenDescargable" src="" alt="Imagen descargable">
-      <br />
-      <p>Tu nivel de huella de carbono es: <span id="carbonLevel"></span><span id="carbonValue"></span></p>
-      <a class="twitter-intent-button"
-        href="https://twitter.com/intent/tweet?text=Acabo%20de%20calcular%20mi%20huella%20de%20carbono%20con%20%40tareagleok%20%C2%BFTe%20animas%20a%20descubrir%20la%20tuya%3F%20%F0%9F%8C%B1"
-        target="_blank" rel="noopener noreferrer">Compartir en Twitter</a>
-      <button id="btnDescargar">Descargar Certificado</button>
+      <div class="results">
+        <p>Tu nivel de huella de carbono es: <span id="carbonLevel"></span><span id="carbonValue"></span></p>
+        <p>Esto es equivalente a <span id="equivalentFlights">[X]</span> vuelos de <span id="cityA">[Ciudad A]</span> a
+          <span id="cityB">[Ciudad B]</span>.
+        </p>
+
+        <a class="twitter-intent-button"
+          href="https://twitter.com/intent/tweet?text=Acabo%20de%20calcular%20mi%20huella%20de%20carbono%20con%20%40tareagleok%20%C2%BFTe%20animas%20a%20descubrir%20la%20tuya%3F%20%F0%9F%8C%B1"
+          target="_blank" rel="noopener noreferrer">Compartir en Twitter</a>
+
+        <h4>Cómo se compara tu puntuación:</h4>
+        <table>
+          <tr>
+            <th>Rango de Puntos</th>
+            <th>Nivel de Contaminación</th>
+          </tr>
+          <tr>
+            <td>0-10</td>
+            <td>Bajo</td>
+          </tr>
+          <tr>
+            <td>11-20</td>
+            <td>Moderado</td>
+          </tr>
+          <tr>
+            <td>21-30</td>
+            <td>Medio</td>
+          </tr>
+          <tr>
+            <td>31-40</td>
+            <td>Alto</td>
+          </tr>
+          <tr>
+            <td>Más de 40</td>
+            <td>Excedido</td>
+          </tr>
+        </table>
+
+        <p id="recommendations">Descubre cómo reducir tu huella de carbono <a href="https://tareagle.com/#"
+            target="_blank" rel="noopener noreferrer">aquí</a>.
+        </p>
+        <p>
+          Y vota por nosotros en ETH Argentina <a href="https://ethargentina.com/vote" target="_blank"
+            rel="noopener noreferrer">aquí</a>.
+        <p>
+          ¡Juntos hagamos la diferencia!
+        </p>
+
+      </div>
+
     </div>
 </body>
 <script type="module" src="./js/__crearImg.js"></script>
