@@ -39,7 +39,7 @@ import { certificate } from "./__prueba.js";
     .then(response => response.json())
     .then(data => {
        const {carbonFootprint,carbonFootprintLevel} = data
-       window.location.href = `https://certificado-tareagle.netlify.app?carbonFootprin1=${carbonFootprint}&carbonFootprintLevel=${carbonFootprintLevel}`
+       window.location.href = `https://carbon-footprint-calculator-ashy.vercel.app/?carbonFootprint=${carbonFootprint}&carbonFootprintLevel=${carbonFootprintLevel}`
     })
     .catch(error => {
         console.error("Error al enviar los datos:", error);
