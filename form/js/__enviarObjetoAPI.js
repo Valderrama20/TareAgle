@@ -18,7 +18,8 @@ import { certificate } from "./__prueba.js";
       "transportationType",
       "dailyKMDistance",
       "flightFrequencyYearly",
-      "smallAppliancesCount"
+      "smallAppliancesCount",
+      "typeOfDiet",
     ];
 
     // Crear un objeto con los datos capturados
